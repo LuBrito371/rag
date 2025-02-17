@@ -14,7 +14,7 @@ if not os.path.exists(persist_directory):
 # Instancia o vector store com o modelo de incorporação
 vector_store = Chroma(persist_directory=persist_directory, embedding_function=embedding_model)
 
-def index_pdf(pdf_path="./files/imposto_renda.pdf"):
+def index_pdf(pdf_path="./files/imposto_renda.txt"):
     """Carrega e indexa um documento PDF."""
     from asserts.pdf_processor import load_pdf, chunk_text
 
